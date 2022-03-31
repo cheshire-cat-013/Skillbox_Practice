@@ -1,0 +1,564 @@
+{
+  "id": "d55a3ed5-02d3-475d-8547-968a83595c1a",
+  "version": "2.0",
+  "name": "Cherkasheninov_skillbox_eldorado.ru",
+  "url": "https://www.eldorado.ru/",
+  "tests": [{
+    "id": "1814f404-cc64-47ae-93c4-0b6f6c973a59",
+    "name": "Проверка добавление товара в корзину",
+    "commands": [{
+      "id": "38e854ff-7db5-45cf-85ff-3c0e5eab00fd",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.eldorado.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "336bcdea-174c-4e68-9654-f71da72a48f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "290c288b-02ed-4e6c-b432-59554a3e0b03",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Корзина')]",
+      "targets": [
+        ["css=.Ii", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/header/div[2]/a[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//a[2]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Корзина')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72189dbe-9299-49ca-8ffd-53a3f46151ab",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Ваша корзина пуста.')]",
+      "targets": [
+        ["css=.empty-basket-one", "css:finder"],
+        ["xpath=//div/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ваша корзина пуста.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32a85688-c96d-4b3f-8a3b-76aba8cec96f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.empty-basket-one",
+      "targets": [
+        ["css=.empty-basket-one", "css:finder"],
+        ["xpath=//div/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ваша корзина пуста.')]", "xpath:innerText"]
+      ],
+      "value": "Ваша корзина пуста."
+    }, {
+      "id": "502762b6-8fb4-48fd-87cb-3e097be3854e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'В каталог')]",
+      "targets": [
+        ["css=.empty-basket-button", "css:finder"],
+        ["xpath=//a[contains(text(),'В каталог')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/cat/')])[17]", "xpath:href"],
+        ["xpath=//div[9]/div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff03ec7f-d54c-4526-af33-2399fb610b45",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Телевизоры Samsung')]",
+      "targets": [
+        ["linkText=Телевизоры Samsung", "linkText"],
+        ["css=.nb:nth-child(6) .Hr:nth-child(3) .Nr:nth-child(2) > .Or", "css:finder"],
+        ["xpath=//a[contains(text(),'Телевизоры Samsung')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[4]/div/div[2]/div[3]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/c/televizory/b/SAMSUNG/')]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Телевизоры Samsung')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65208797-309a-452c-943e-2a8670d4a811",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Добавить в корзину')]",
+      "targets": [
+        ["css=.rG:nth-child(1) .uN", "css:finder"],
+        ["xpath=//div[@id='listing-container']/ul/li/div[3]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Добавить в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "226a5b52-6aea-4e55-b267-5ba53063e865",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'В корзине')]",
+      "targets": [
+        ["css=.rN", "css:finder"],
+        ["xpath=//div[@id='listing-container']/ul/li/div[3]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'В корзине')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a580102-a825-4b51-9a6b-4dd19a866f44",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Очистить корзину')]",
+      "targets": [
+        ["css=.q-basketBlockRowHeaderItem__clearBasketBtn", "css:finder"],
+        ["xpath=//form[@id='basket-form']/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Очистить корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "472c15f8-b96b-49df-9847-99e2c98d88cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show_delete_items",
+      "targets": [
+        ["css=.show_delete_items", "css:finder"],
+        ["xpath=//div[@id='cart-items']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a441575a-d95e-4d17-856a-17d1f6cf658b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.q-basketBlockItemDelete > div",
+      "targets": [
+        ["css=.q-basketBlockItemDelete > div", "css:finder"],
+        ["xpath=//div[@id='cart-items']/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Товар удален"
+    }, {
+      "id": "52f6747f-4b55-42fc-a4e7-377250e62099",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show_delete_items",
+      "targets": [
+        ["css=.show_delete_items", "css:finder"],
+        ["xpath=//div[@id='cart-items']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6f5fb3e-a5f3-4b4d-9c15-0994f6df4376",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Восстановить в корзине",
+      "targets": [
+        ["linkText=Восстановить в корзине", "linkText"],
+        ["css=.hasRecovery", "css:finder"],
+        ["xpath=//a[contains(text(),'Восстановить в корзине')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"return JsBasket.RecoveryItems('678399638','1176773686', $(this))\"]", "xpath:attributes"],
+        ["xpath=//div[@id='cart-items']/div/div[2]/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[15]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Восстановить в корзине')]", "xpath:innerText"]
+      ],
+      "value": "Восстановить в корзине"
+    }]
+  }, {
+    "id": "94756bc1-7e6b-4493-93eb-0e3f2e94824b",
+    "name": "Проверка каталога",
+    "commands": [{
+      "id": "adc8d53a-da57-4906-a4ae-b12c40726bbf",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.eldorado.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30e70a9d-cfbd-471c-8e09-570d3ac977f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e360f5f8-50a7-4f8e-b6e6-c3a9048d845f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Каталог')]",
+      "targets": [
+        ["linkText=Каталог", "linkText"],
+        ["css=.fj", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/nav/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/d/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a1f04b3-6d68-46c0-ba64-e0231428f92a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h2[contains(.,'Телевизоры, аудио, видео')]",
+      "targets": [
+        ["css=.Ri:nth-child(5) .Vi", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[3]/a/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Телевизоры, аудио, видео')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a97c420-8045-4211-b165-7988149dc50f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.db:nth-child(4)",
+      "targets": [
+        ["css=.db:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Телевизоры, аудио, видео')]", "xpath:innerText"]
+      ],
+      "value": "Телевизоры, аудио, видео"
+    }, {
+      "id": "c3d1aa5d-abe9-4486-ac29-69641bdb2c3b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Каталог')]",
+      "targets": [
+        ["css=.Sp:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de977ec1-67f2-4866-9876-2e28b121635a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h2[contains(.,'Смартфоны и гаджеты')]",
+      "targets": [
+        ["css=.Ri:nth-child(7) .Vi", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[5]/a/h2", "xpath:idRelative"],
+        ["xpath=//div[5]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Смартфоны и гаджеты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c23c338-d63c-49e7-833a-bf0a2d0c081e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'Смартфоны и гаджеты')]",
+      "targets": [
+        ["css=.db:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Смартфоны и гаджеты')]", "xpath:innerText"]
+      ],
+      "value": "Смартфоны и гаджеты"
+    }, {
+      "id": "6cd96bad-8159-48f9-b61b-1a63ecb84c8c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Каталог')]",
+      "targets": [
+        ["css=.Sp:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a8098f4-da6c-4c99-92e1-82a6eff02cac",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h2[contains(.,'Компьютеры и ноутбуки')]",
+      "targets": [
+        ["css=.Ri:nth-child(9) .Vi", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[7]/a/h2", "xpath:idRelative"],
+        ["xpath=//div[7]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Компьютеры и ноутбуки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51bf2799-1e8e-4fe8-8db3-9f1096efbf17",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'Компьютеры и ноутбуки')]",
+      "targets": [
+        ["css=.db:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Компьютеры и ноутбуки')]", "xpath:innerText"]
+      ],
+      "value": "Компьютеры и ноутбуки"
+    }, {
+      "id": "500042a5-30f4-4ee1-aa74-7da39f857f04",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Каталог')]",
+      "targets": [
+        ["css=.Sp:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28712d21-c552-4a1d-8e06-293b780723f5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h2[contains(.,'Техника для кухни')]",
+      "targets": [
+        ["css=.Ri:nth-child(13) .Vi", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[11]/a/h2", "xpath:idRelative"],
+        ["xpath=//div[11]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Техника для кухни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5067eb37-0af9-422a-ae58-c66c9e973e7b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.db:nth-child(4)",
+      "targets": [
+        ["css=.db:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Техника для кухни')]", "xpath:innerText"]
+      ],
+      "value": "Техника для кухни"
+    }, {
+      "id": "e64ee42d-7352-4d50-9c38-44a0aa530efa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Каталог')]",
+      "targets": [
+        ["css=.Sp:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adecec6d-8f39-4452-b039-cb7fcf8aa1c6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h2[contains(.,'Красота и здоровье')]",
+      "targets": [
+        ["css=.Ri:nth-child(15) .Vi", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[13]/a/h2", "xpath:idRelative"],
+        ["xpath=//div[13]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Красота и здоровье')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5356b4cd-eb03-4211-a57e-90bd56fd36f5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.db:nth-child(4)",
+      "targets": [
+        ["css=.db:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Товары для красоты и здоровья')]", "xpath:innerText"]
+      ],
+      "value": "Товары для красоты и здоровья"
+    }, {
+      "id": "69e3049d-acae-43a3-8604-0571e458effb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Каталог')]",
+      "targets": [
+        ["css=.Sp:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b1a0d70-c3bb-4714-b2f4-73112e762975",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h2[contains(.,'Детские товары')]",
+      "targets": [
+        ["css=.Ri:nth-child(17) .Vi", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[15]/a/h2", "xpath:idRelative"],
+        ["xpath=//div[15]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Детские товары')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7abaa1e0-ae64-489f-a25b-226acd2fc8a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.db:nth-child(4)",
+      "targets": [
+        ["css=.db:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Детские товары')]", "xpath:innerText"]
+      ],
+      "value": "Детские товары"
+    }, {
+      "id": "1806f113-0d62-4318-8a71-7f85e68e0125",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Каталог')]",
+      "targets": [
+        ["css=.Sp:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "baa53809-f740-49e0-9fca-496fd9d8f440",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h2[contains(.,'Игры, софт, развлечения')]",
+      "targets": [
+        ["css=.Ri:nth-child(21) .Vi", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[19]/a/h2", "xpath:idRelative"],
+        ["xpath=//div[19]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Игры, софт, развлечения')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c87f75e0-b828-45e4-b183-7e03d1217c78",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.db:nth-child(4)",
+      "targets": [
+        ["css=.db:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Игры, софт и товары для развлечений')]", "xpath:innerText"]
+      ],
+      "value": "Игры, софт и товары для развлечений"
+    }]
+  }, {
+    "id": "50dc0415-3e9e-41ee-a79d-920db9521031",
+    "name": "Проверка товара в корзине нет - корзина пуста",
+    "commands": [{
+      "id": "d960c76d-99f8-47b3-93e0-4ae63d97a6e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.eldorado.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16938011-6dbf-4fbe-ada0-2270209def2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8b89b5c-dd56-4d96-8078-d0330d26254d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Корзина')]",
+      "targets": [
+        ["css=.Ii", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/header/div[2]/a[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//a[2]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Корзина')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "957c9228-a965-406a-84c3-601bec3a3ccb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.empty-basket-one",
+      "targets": [
+        ["css=.empty-basket-one", "css:finder"],
+        ["xpath=//div/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ваша корзина пуста.')]", "xpath:innerText"]
+      ],
+      "value": "Ваша корзина пуста."
+    }]
+  }, {
+    "id": "274a9af3-47f3-4a44-b773-a7aa48048d6f",
+    "name": "Проверка поисковой строки \"Телефон\"",
+    "commands": [{
+      "id": "4fbce531-790a-40ee-bae0-743c96cb2e53",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.eldorado.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d30a37a-3707-4135-8ef7-5e25f52a927b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e77e0969-6a88-4060-958e-f788ff6f3a6a",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.Yr", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac49adc8-04be-4992-9d94-ab93294ef3bd",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.Yr", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Телефон"
+    }, {
+      "id": "7f67f2d1-c8fb-4b62-95dd-7b559b1c0e4e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Найти')]",
+      "targets": [
+        ["css=.Vr", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Найти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b755c6e2-81c2-4efe-9aef-2fefc4ec1932",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.Sp:nth-child(4) span",
+      "targets": [
+        ["css=.Sp:nth-child(4) span", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Смартфоны, мобильные телефоны')]", "xpath:innerText"]
+      ],
+      "value": "Смартфоны, мобильные телефоны"
+    }]
+  }],
+  "suites": [{
+    "id": "5c7e0992-c353-4110-bfce-7088744ed1b4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.eldorado.ru/"],
+  "plugins": []
+}
